@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right">
+        <ImageView
+            android:id="@+id/refreshButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/refresh"
+            android:visibility="visible"
+
+        />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text=""
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="#8BC34A"/>
+
+    <Button
+        android:id="@+id/btn_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="보일러 상태 조절"
+        android:textSize="30sp"/>
+</LinearLayout>
